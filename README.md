@@ -23,7 +23,7 @@
 #     Rainfall over time 
 
 # Alejandro 
-#   Manage Streamlet 
+#   Manage the Streamlet 
 #   Presenting the data cleanly and the goals behind it 
 #   Host & organize meetings 
 #    Analyze data: Specific data points 
