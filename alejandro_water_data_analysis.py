@@ -8,14 +8,15 @@ Original file is located at
 """
 
 
-file_path = "https://raw.githubusercontent.com/kassandrasage24-ctrl/ENG220-19/refs/heads/main/global_water_consumption.csv"
-water = pd.read_csv(file_path)
+
 
 import streamlit as st
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 
+file_path = "https://raw.githubusercontent.com/kassandrasage24-ctrl/ENG220-19/refs/heads/main/global_water_consumption.csv"
+water = pd.read_csv(file_path)
 # Assuming 'water' DataFrame is already loaded from previous cells.
 
 st.title("Water Consumption and Scarcity Analysis")
