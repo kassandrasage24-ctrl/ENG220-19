@@ -7,37 +7,9 @@ Original file is located at
     https://colab.research.google.com/drive/1nJb2dXHfMhG3PDgX5AyVBUSorPF2-Dhh
 """
 
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-import numpy as np
-import streamlit as st
+
 file_path = "https://raw.githubusercontent.com/kassandrasage24-ctrl/ENG220-19/refs/heads/main/global_water_consumption.csv"
 water = pd.read_csv(file_path)
-water.head()
-#water database
-
-plt.figure(figsize=(10, 6))
-sns.scatterplot(x='Rainfall Impact (Annual Precipitation in mm)', y='Groundwater Depletion Rate (%)', data=water)
-plt.title('Rainfall Impact vs. Groundwater Depletion Rate (%)')
-plt.xlabel('Rainfall Impact (Annual Precipitation in mm)')
-plt.ylabel('Groundwater Depletion Rate (%)')
-plt.grid(True)
-st.scatter_chart(plt.show())
-
-plt.figure(figsize=(10, 6))
-sns.scatterplot(x='Total Water Consumption (Billion Cubic Meters)', y='Groundwater Depletion Rate (%)', data=water)
-plt.title('Total Water Consumption vs. Groundwater Depletion Rate')
-plt.xlabel('Total Water Consumption (Billion Cubic Meters)')
-plt.ylabel('Groundwater Depletion Rate (%)')
-plt.grid(True)
-plt.show()
-
-counts = water["Water Scarcity Level"].value_counts()
-
-plt.pie(counts, labels=counts.index, autopct="%1.1f%%", startangle=90)
-plt.title("Water Scarcity Level Distribution")
-plt.show()
 
 import streamlit as st
 import matplotlib.pyplot as plt
